@@ -1,0 +1,97 @@
+{
+  "model": "Random Forest (with feature)",
+  "uses_age_thalach": true,
+  "target_meaning": "1 = heart disease present, 0 = no heart disease",
+  "feature_columns": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_ranges": {
+    "age": {
+      "min": 29.0,
+      "max": 77.0,
+      "median": 56.0
+    },
+    "trestbps": {
+      "min": 94.0,
+      "max": 200.0,
+      "median": 130.0
+    },
+    "chol": {
+      "min": 126.0,
+      "max": 564.0,
+      "median": 243.0
+    },
+    "thalach": {
+      "min": 71.0,
+      "max": 202.0,
+      "median": 153.0
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 6.2,
+      "median": 0.8
+    }
+  },
+  "category_labels": {
+    "sex": {
+      "0": "Female",
+      "1": "Male"
+    },
+    "fbs": {
+      "0": "No (<= 120 mg/dl)",
+      "1": "Yes (> 120 mg/dl)"
+    },
+    "exang": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "cp": {
+      "0": "Typical angina",
+      "1": "Atypical angina",
+      "2": "Non-anginal pain",
+      "3": "Asymptomatic"
+    },
+    "restecg": {
+      "0": "Normal",
+      "1": "ST-T wave abnormality",
+      "2": "Left ventricular hypertrophy"
+    },
+    "slope": {
+      "0": "Upsloping",
+      "1": "Flat",
+      "2": "Downsloping"
+    },
+    "thal": {
+      "0": "Normal",
+      "1": "Fixed defect",
+      "2": "Reversible defect"
+    },
+    "ca": {
+      "0": "0 vessels",
+      "1": "1 vessel",
+      "2": "2 vessels",
+      "3": "3 vessels"
+    }
+  },
+  "default_threshold": 0.5,
+  "test_metrics": {
+    "accuracy": 0.85,
+    "precision": 0.9524,
+    "recall_sensitivity": 0.7143,
+    "specificity": 0.9688,
+    "f1": 0.8163,
+    "roc_auc": 0.9386
+  }
+}

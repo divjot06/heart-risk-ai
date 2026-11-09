@@ -1,0 +1,4 @@
+Model,Selected feature setup,CV ROC-AUC,Test ROC-AUC,Accuracy,Precision,Recall,F1
+Logistic Regression,without age_thalach,0.88,0.97,0.917,1.0,0.821,0.902
+Random Forest,with age_thalach,0.898,0.939,0.85,0.952,0.714,0.816
+XGBoost,with age_thalach,0.888,0.941,0.85,0.952,0.714,0.816
